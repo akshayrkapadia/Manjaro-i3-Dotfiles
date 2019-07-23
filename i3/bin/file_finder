@@ -3,5 +3,5 @@
 file="$(find ~/ -not -type d | dmenu)"
 if [ "$file" != "" ]
 then
-	emacs "$file" 
+	xdg-open "$file" 
 fi
