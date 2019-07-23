@@ -55,10 +55,11 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+F2 exec surf google.com
-bindsym $mod+F3 exec nautilus
+bindsym $mod+F2 exec chromium
+bindsym $mod+Shift+F2 exec surf google.com
+bindsym $mod+F3 exec thunar
 bindsym $mod+Shift+F3 exec "terminal -e ranger"
-bindysm $mod+F4 exec emacs
+bindsym $mod+F4 exec emacs
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -68,6 +69,9 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+
+# Go to selected window
+# bindsym $mod+Shift+m exec terminal -e `wmctrl -l|awk '{$3=""; $2=""; $1=""; print $0}' | dmenu -p "Open Windows"`
 
 # focus_follows_mouse no
 
@@ -277,7 +281,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker slock
 exec_always --no-startup-id ff-theme-util
