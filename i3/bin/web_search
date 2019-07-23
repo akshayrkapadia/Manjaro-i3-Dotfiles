@@ -1,5 +1,5 @@
 #!/bin/zsh
-query=`$(cat .config/chromium/Default/Bookmarks | grep "https://*" | sed -e 's/"url": "\(.*\)"/\1/' | awk '{$1=$1};1'| dmenu -p "Search")`
+query=$(cat ~/.config/chromium/Default/Bookmarks | grep "https://*" | sed -e 's/"url": "\(.*\)"/\1/' | awk '{$1=$1};1'| dmenu -p "Search")
 
 if [ "$query" != "" ]
 then
