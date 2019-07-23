@@ -1,7 +1,0 @@
-#!/bin/zsh
-
-file=`$(find ~/ -not -type d | dmenu -p "Files")`
-if [ "$file" != "" ]
-then
-	xdg-open "$file"
-fi
