@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+file="$(find ~/ -not -type d | dmenu)"
+if [ "$file" != "" ]
+then
+	emacs "$file" 
+fi

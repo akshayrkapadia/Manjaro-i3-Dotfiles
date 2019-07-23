@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+monitor_layouts=("default\nleft\nright")
+layout=$(echo -e "$monitor_layouts" | dmenu)
+
+if [ "$layout" = "left" ]
+then
+	~/.screenlayout/left_monitor.sh
+elif [ "$layout" = "right" ]
+then
+	~/.screenlayout/right_monitor.sh
+elif [ "$layout" = "default" ]
+then
+	~/.screenlayout/default.sh
+fi
