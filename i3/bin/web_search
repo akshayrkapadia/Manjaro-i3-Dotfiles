@@ -3,5 +3,10 @@ query=$(cat ~/.config/chromium/Default/Bookmarks | grep "https://*" | sed -e 's/
 
 if [ "$query" != "" ]
 then
-	chromium "$query"
+	if [ "$(echo $query | grep 'https://*.*')" != "" ]
+	then
+		xdg-open "$query"
+	else
+		xdg-open "https://google.com/search?q=${query}"
+	fi
 fi
