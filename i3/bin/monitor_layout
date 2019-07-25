@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 monitor_layouts=("default\nleft\nright")
-layout=$(echo -e "$monitor_layouts" | dmenu -fn "Noto-10.5" -nb "#2B2C2B" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -p "Monitor Layout")
+layout=$(echo -e "$monitor_layouts" | dmenu -fn "Noto-13" -nb "#2B2C2B" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -p "Monitor Layout")
 
 if [ "$layout" = "left" ]
 then
