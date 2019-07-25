@@ -27,7 +27,7 @@ order += "battery all"
 order += "tztime local"
 
 cpu_usage {
-        format = " cpu  %usage "
+        format = "⏲ %usage "
 }
 
 cpu_temperature 1 {
@@ -46,20 +46,20 @@ disk "/" {
 }
 
 volume master {
-        format = ": %volume"
-        format_muted = ": muted (%volume)"
+        format = " %volume"
+        format_muted = " muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
 }
 
 wireless _first_ {
-        format_up = ": (%quality at %essid) %ip"
+        format_up = " %quality at %essid (%ip)"
         format_down = ""
 }
 
 ethernet _first_ {
-        format_up = ": %ip (%speed)"
+        format_up = " %speed (%ip)"
         format_down = ""
 }
 
