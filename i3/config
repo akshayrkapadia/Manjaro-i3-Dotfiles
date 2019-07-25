@@ -56,7 +56,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+F2 exec chromium
-bindsym $mod+Shift+F2 exec surf google.com
+# bindsym $mod+Shift+F2 exec surf google.com
+bindsym $mod+Shift+F2 exec ./bin/web_search
 bindsym $mod+F3 exec thunar
 # bindsym $mod+Shift+F3 exec "terminal -e ranger"
 bindsym $mod+Shift+F3 exec ./bin/file_finder
