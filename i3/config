@@ -68,10 +68,10 @@ bindsym XF86AudioPrev exec playerctl previous
 # Start Applications
 bindsym $mod+F2 exec chromium
 # bindsym $mod+Shift+F2 exec surf google.com
-bindsym $mod+Shift+F2 exec ./bin/web_search
+bindsym $mod+Shift+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+F3 exec thunar
 # bindsym $mod+Shift+F3 exec "terminal -e ranger"
-bindsym $mod+Shift+F3 exec ./bin/file_finder
+bindsym $mod+Shift+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F4 exec emacs
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -154,7 +154,7 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
 # Change monitor layout
-bindsym $mod+m exec ./bin/monitor_layout
+bindsym $mod+m exec ./dotfiles/i3/bin/monitor_layout
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
