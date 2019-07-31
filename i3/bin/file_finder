@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-file=`find ~/ -type f | dmenu -fn "Noto-13" -nb "#2B2C2B" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -p "Files"`
+file=`find ~/ -type f | dmenu -i -fn "Noto-13" -nb "#2B2C2B" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -p "Files"`
 if [ "$file" != "" ]
 then
 	xdg-open "$file"
