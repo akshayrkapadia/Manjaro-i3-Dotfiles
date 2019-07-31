@@ -66,12 +66,12 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start Applications
-bindsym $mod+F2 exec chromium
+bindsym $mod+Shift+F2 exec chromium
 # bindsym $mod+Shift+F2 exec surf google.com
-bindsym $mod+Shift+F2 exec ./dotfiles/i3/bin/web_search
-bindsym $mod+F3 exec thunar
+bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
+bindsym $mod+Shift+F3 exec thunar
 # bindsym $mod+Shift+F3 exec "terminal -e ranger"
-bindsym $mod+Shift+F3 exec ./dotfiles/i3/bin/file_finder
+bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F4 exec emacs
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
