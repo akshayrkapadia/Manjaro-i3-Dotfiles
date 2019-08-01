@@ -10,7 +10,7 @@ These instructions will help you install this config.
 
 Sofware needed for this config.
 
-*[Manjaro i3](https://manjaro.org/download/i3/)
+- [Manjaro i3](https://manjaro.org/download/i3/)
 
 ### Installing
 
