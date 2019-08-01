@@ -66,8 +66,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start Applications
-bindsym $mod+Shift+F2 exec chromium
-# bindsym $mod+Shift+F2 exec surf google.com
+bindsym $mod+Shift+F2 exec brave
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+Shift+F3 exec thunar
 # bindsym $mod+Shift+F3 exec "terminal -e ranger"
@@ -84,7 +83,7 @@ bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Go to selected window
-# bindsym $mod+Shift+m exec terminal -e `wmctrl -l|awk '{$3=""; $2=""; $1=""; print $0}' | dmenu -p "Open Windows"`
+bindsym $mod+Shift+m exec ./dotfiles/i3/bin/window_select
 
 # focus_follows_mouse no
 
