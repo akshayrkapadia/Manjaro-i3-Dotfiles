@@ -4,6 +4,6 @@ window=$(wmctrl -l|awk '{print $0}' | dmenu -i -l 5 -fn "Noto-13" -nb "#2B2C2B" 
 if [ "$window"!="" ]
 then
 	desktop="$(cut -d " " -f3 <<< "$window")"
-	id="$(cut -d " " -f1 <<< "$window")"
-	wmctrl -s "$desktop" -a "$id" -i
+	window_id="$(cut -d " " -f1 <<< "$window")"
+	wmctrl -s "$desktop" -a "$window_id" -i
 fi
