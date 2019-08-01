@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+yes | sudo pacman -Rdd $*
+pacclean
