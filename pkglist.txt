@@ -194,9 +194,9 @@ psmisc
 pulseaudio
 pygtk
 python
+python-pip
 qt5-styleplugins
 qt5ct
-ranger
 reiserfsprogs
 rsync
 s-nail
@@ -204,7 +204,6 @@ sbxkb
 screenfetch
 sed
 shadow
-slock
 spectre-meltdown-checker
 speedtest-cli
 subversion
