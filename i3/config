@@ -71,8 +71,8 @@ bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+Shift+F3 exec thunar
 # bindsym $mod+Shift+F3 exec "terminal -e ranger"
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
-bindsym $mod+F4 exec emacs
-bindsym $mod+F5 exec terminal -e 'mocp'
+bindsym $mod+F5 exec emacs
+# bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -83,7 +83,7 @@ bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Go to selected window
-bindsym $mod+Shift+m exec ./dotfiles/i3/bin/window_select
+bindsym $mod+Shift+F4 exec ./dotfiles/i3/bin/window_select
 
 # focus_follows_mouse no
 
@@ -153,7 +153,7 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
 # Change monitor layout
-bindsym $mod+m exec ./dotfiles/i3/bin/monitor_layout
+bindsym $mod+F4 exec ./dotfiles/i3/bin/monitor_layout
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
