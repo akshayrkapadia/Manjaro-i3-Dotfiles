@@ -23,6 +23,16 @@ chmod +x install
 ./install
 ```
 
+### Updating
+
+How to update the config using the update script
+
+```
+cd dotfiles
+chmod +x update
+./update
+```
+
 ## Authors
 
 * **Akshay R. Kapadia** - *Maintainer* - [AkshayRKapadia](https://gitlab.com/akshayrkapadia)
