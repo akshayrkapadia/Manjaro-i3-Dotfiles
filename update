@@ -4,7 +4,6 @@ cd ~/dotfiles
 git pull origin
 yes | cp ./i3/config ~/.i3/
 yes | cp ./i3/i3status/config ~/.config/i3status/
-yes | cp ./i3/bin/* ~/bin/
 yes | cp ./profile ~/
 yes | mv ~/profile ~/.profile
 yes | chmod +x ./i3/bin/paci
