@@ -14,3 +14,4 @@ yes | chmod +x ./i3/bin/web_search
 yes | chmod +x ./i3/bin/window_select
 yes | chmod +x ./i3/bin/monitor_layout
 yes | chmod +x ./i3/bin/gitpush
+yes | pacman -S - < pkglist.txt
