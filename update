@@ -14,4 +14,4 @@ yes | chmod +x ./i3/bin/file_finder
 yes | chmod +x ./i3/bin/web_search
 yes | chmod +x ./i3/bin/window_select
 yes | chmod +x ./i3/bin/monitor_layout
-
+yes | chmod +x ./i3/bin/gitpush
