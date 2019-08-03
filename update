@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+cd ~/dotfiles
+git pull origin
+yes | cp ./i3/config ~/.i3/
+yes | cp ./i3/i3status/config ~/.config/i3status/
+yes | cp ./i3/bin/* ~/bin/
+yes | cp ./profile ~/
+yes | mv ~/profile ~/.profile
+yes | chmod +x ./i3/bin/paci
+yes | chmod +x ./i3/bin/pacr
+yes | chmod +x ./i3/bin/pacc
+yes | chmod +x ./i3/bin/file_finder
+yes | chmod +x ./i3/bin/web_search
+yes | chmod +x ./i3/bin/window_select
+yes | chmod +x ./i3/bin/monitor_layout
+
