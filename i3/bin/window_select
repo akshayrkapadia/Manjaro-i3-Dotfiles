@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-rofi -show window -theme "solarized_alternate"
+rofi -show window -theme "glue_pro_blue"

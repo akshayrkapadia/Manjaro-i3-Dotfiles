@@ -1,5 +1,5 @@
 #!/bin/zsh
-query=$(cat ~/.config/BraveSoftware/Brave-Browser/Default/Bookmarks | grep "https://*" | sed -e 's/"url": "\(.*\)"/\1/' | awk '{$1=$1};1'| rofi -dmenu -theme "solarized_alternate")
+query=$(cat ~/.config/BraveSoftware/Brave-Browser/Default/Bookmarks | grep "https://*" | sed -e 's/"url": "\(.*\)"/\1/' | awk '{$1=$1};1'| rofi -dmenu -theme "glue_pro_blue")
 
 if [ "$query" != "" ]
 then

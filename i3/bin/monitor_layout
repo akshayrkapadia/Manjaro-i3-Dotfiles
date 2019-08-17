@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 monitor_layouts=("primary\nsecondary\nextend_left\nextend_right")
-layout=$(echo -e "$monitor_layouts" | rofi -dmenu -theme "solarized_alternate")
+layout=$(echo -e "$monitor_layouts" | rofi -dmenu -theme "glue_pro_blue")
 
 if [ "$layout" = "extend_left" ]
 then
