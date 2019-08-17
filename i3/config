@@ -26,6 +26,9 @@ font xft:URWGothic-Book 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+# set wallpaper
+exec --no-startup-id "feh --bg-scale ~/dotfiles/wallpaper/Sierra.jpg"
+
 # start a terminal
 bindsym $mod+Return exec terminal
 
