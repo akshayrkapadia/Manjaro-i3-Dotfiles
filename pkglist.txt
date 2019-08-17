@@ -61,8 +61,6 @@ gcc
 gcc-libs
 gcolor2
 gconf
-gedit
-gedit-plugins
 gettext
 git
 gksu-polkit
@@ -156,6 +154,7 @@ mlocate
 mobile-broadband-provider-info
 moc
 modemmanager
+mousepad
 nano
 ncdu
 neofetch
