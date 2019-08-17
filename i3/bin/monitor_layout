@@ -1,15 +1,18 @@
 #!/bin/zsh
 
-monitor_layouts=("default\nleft\nright")
-layout=$(echo -e "$monitor_layouts" | dmenu -i -fn "Noto-13" -nb "#2B2C2B" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -p "Monitor Layout")
+monitor_layouts=("primary\nsecondary\nextend_left\nextend_right")
+layout=$(echo -e "$monitor_layouts" | rofi -dmenu -theme "solarized_alternate")
 
-if [ "$layout" = "left" ]
+if [ "$layout" = "extend_left" ]
 then
-	~/.screenlayout/left_monitor.sh
-elif [ "$layout" = "right" ]
+	~/.screenlayout/extend_left.sh
+elif [ "$layout" = "extend_right" ]
 then
-	~/.screenlayout/right_monitor.sh
-elif [ "$layout" = "default" ]
+	~/.screenlayout/extend_right.sh
+elif [ "$layout" = "secondary" ]
 then
-	~/.screenlayout/default.sh
+	~/.screenlayout/secondary.sh
+elif [ "$layout" = "primary" ]
+then
+	~/.screenlayout/primary.sh
 fi

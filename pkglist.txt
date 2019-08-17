@@ -17,7 +17,6 @@ binutils
 bison
 blueman
 bluez-utils
-bmenu
 brave
 btrfs-progs
 bzip2
@@ -201,7 +200,6 @@ reiserfsprogs
 rsync
 s-nail
 sbxkb
-screenfetch
 sed
 shadow
 spectre-meltdown-checker

@@ -1,9 +1,3 @@
 #!/bin/zsh
 
-window=$(wmctrl -l| dmenu -i -l 5 -fn "Noto-13" -nb "#2B2C2B" -nf "#F9FAF9" -sb "#16A085" -sf "#F9FAF9" -p "Windows")
-if [ "$window"!="" ]
-then
-	desktop="$(cut -d " " -f3 <<< "$window")"
-	window_id="$(cut -d " " -f1 <<< "$window")"
-	wmctrl -s "$desktop" -i -a "$window_id"
-fi
+rofi -show window -theme "solarized_alternate"
