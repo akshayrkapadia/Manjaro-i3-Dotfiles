@@ -262,6 +262,7 @@ xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
 xfce4-power-manager
+xfce4-settings
 xfsprogs
 xorg-server
 xorg-twm
