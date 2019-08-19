@@ -8,9 +8,7 @@ then
 	if [ "$selection" !=  "" ]
 	then
 		sed -i /"$selection"/d ~/Documents/todo.txt
-        todo
 	else
 		echo "$option" >> ~/Documents/todo.txt
-        todo
 	fi
 fi
