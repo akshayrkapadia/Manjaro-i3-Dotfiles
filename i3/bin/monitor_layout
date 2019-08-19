@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 monitor_layouts=("primary\nsecondary\nextend_left\nextend_right")
-layout=$(echo -e "$monitor_layouts" | rofi -dmenu -theme "Adapta-Nokto" -i -p "Layout")
+layout=$(echo -e "$monitor_layouts" | rofi -dmenu -theme "Adapta-Nokto" -i -p "Layout" -font "Hack 18")
 
 if [ "$layout" = "extend_left" ]
 then
