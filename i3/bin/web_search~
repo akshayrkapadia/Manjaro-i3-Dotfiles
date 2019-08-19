@@ -7,7 +7,6 @@ then
 	then
 		xdg-open "$query"
 	else
-		q=$(sed s/" "/"+"/g <<< "$query")
-		xdg-open "https://google.com/search?q=${q}"
+		xdg-open "https://google.com/search?q=${query}"
 	fi
 fi
