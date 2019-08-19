@@ -36,7 +36,7 @@ bindsym $mod+Return exec terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-Nokto"`
+bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-Nokto" -font "Hack 18"`
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##

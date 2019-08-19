@@ -44,7 +44,7 @@ bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-
 
 exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-exec --no-startup-id terminal -e 'pulseaudio'
+#exec --no-startup-id terminal -e 'pulseaudio'
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
 
