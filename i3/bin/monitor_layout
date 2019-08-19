@@ -1,18 +1,21 @@
 #!/bin/zsh
 
-monitor_layouts=("primary\nsecondary\nextend_left\nextend_right")
+monitor_layouts=("primary\nsecondary\nextend_left\nextend_right\nmirror")
 layout=$(echo -e "$monitor_layouts" | rofi -dmenu -theme "Adapta-Nokto" -i -p "Layout" -font "Hack 18")
 
 if [ "$layout" = "extend_left" ]
 then
-	~/.screenlayout/extend_left.sh
+	~/dotfiles/i3/screenlayout/extend_left.sh
 elif [ "$layout" = "extend_right" ]
 then
-	~/.screenlayout/extend_right.sh
+	~/dotfiles/i3/screenlayout/extend_right.sh
+elif [ "$layout" = "mirror" ]
+then
+	~/dotfiles/i3/screenlayout/mirror.sh
 elif [ "$layout" = "secondary" ]
 then
-	~/.screenlayout/secondary.sh
+	~/dotfiles/i3/screenlayout/secondary.sh
 elif [ "$layout" = "primary" ]
 then
-	~/.screenlayout/primary.sh
+	~/dotfiles/i3/screenlayout/primary.sh
 fi
