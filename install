@@ -4,6 +4,7 @@ yes | cp ./profile ~/.profile
 yes | cp ./i3/config ~/.i3/
 yes | cp ./i3/i3status/config ~/.config/i3status/
 yes | cp mimeapps.list ~/.config/
+yes | sudo cp mimeinfo.cache /usr/share/applications/
 chmod +x ./i3/bin/todo ./i3/bin/file_finder ./i3/bin/monitor_layout ./i3/bin/web_search ./i3/bin/window_select ./i3/bin/pacc ./i3/bin/pacr ./i3/bin/paci
 yes | sudo cp ./i3/dmenu_recency /usr/bin/
 yes | sudo pacman -S - < ./pkglist.txt
