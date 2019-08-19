@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-file=`find ~/ -type f | rofi -dmenu -theme "Adapta-Nokto" -i`
+file=`find ~/ -type f | rofi -dmenu -theme "Adapta-Nokto" -i -p "File"`
 if [ "$file" != "" ]
 then
 	xdg-open "$file"
