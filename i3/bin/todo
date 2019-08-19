@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+
+option=`cat ~/Documents/todo.txt | rofi -dmenu -theme "Adapta-Nokto" -i -p "TODO" -font "Hack 18"`
+if [ "$option" != "" ]
+then
+	selection=`cat ~/Documents/todo.txt | grep "$option"`
+	if [ "$selection" !=  "" ]
+	then
+		sed -i /"$selection"/d ~/Documents/todo.txt
+	else
+		echo "$option" >> ~/Documents/todo.txt
+	fi
+fi
