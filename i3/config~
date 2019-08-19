@@ -68,7 +68,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Start Applications
 bindsym $mod+Shift+F2 exec brave
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
-bindsym $mod+Shift+F3 exec pcmanfm
+bindsym $mod+Shift+F3 exec thunar
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F5 exec subl
 bindsym $mod+t exec --no-startup-id pkill compton
