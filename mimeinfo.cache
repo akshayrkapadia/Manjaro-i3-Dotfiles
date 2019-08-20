@@ -1,13 +1,13 @@
 [MIME Cache]
-application/epub+zip=org.pwmt.zathura-pdf-mupdf.desktop;xarchiver.desktop;
+application/epub+zip=xarchiver.desktop;
 application/gzip=xarchiver.desktop;
 application/mpeg4-iod=vlc.desktop;
 application/mpeg4-muxcodetable=vlc.desktop;
 application/mxf=vlc.desktop;
 application/octet-stream=open-fuse-iso.desktop;
 application/ogg=rhythmbox.desktop;vlc.desktop;
-application/oxps=org.pwmt.zathura-pdf-mupdf.desktop;
-application/pdf=epdfview.desktop;gimp.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
+application/oxps=org.gnome.Evince.desktop;
+application/pdf=org.gnome.Evince.desktop;
 application/pkcs10=gcr-viewer.desktop;
 application/pkcs10+pem=gcr-viewer.desktop;
 application/pkcs12=gcr-viewer.desktop;

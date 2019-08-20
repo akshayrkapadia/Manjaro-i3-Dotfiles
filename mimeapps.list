@@ -12,11 +12,12 @@ application/x-extension-xhtml=userapp-Brave.desktop
 application/x-extension-xht=userapp-Brave.desktop
 image/jpeg=viewnior.desktop;gpicview.desktop;
 image/png=viewnior.desktop;gpicview.desktop;
-text/plain=org.gnome.code.desktop
+text/plain=io.elementary.code.desktop
 x-scheme-handler/mailto=userapp-Thunderbird.desktop
 message/rfc822=userapp-Thunderbird.desktop
-application/pdf=epdfview.desktop
+application/pdf=org.gnome.Evince.desktop
 application/x-bittorrent=deluge.desktop
+x-scheme-handler/mailspring=mailspring.desktop
 
 [Added Associations]
 x-scheme-handler/http=exo-web-browser.desktop;
@@ -32,9 +33,9 @@ application/x-extension-xhtml=userapp-Brave.desktop;
 application/x-extension-xht=userapp-Brave.desktop;
 image/jpeg=viewnior.desktop;gpicview.desktop;
 image/png=viewnior.desktop;gpicview.desktop;
-text/plain=org.gnome.code.desktop;
+text/plain=io.elementary.code.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird.desktop;
 message/rfc822=userapp-Thunderbird.desktop;
-application/pdf=epdfview.desktop;
+application/pdf=org.gnome.Evince.desktop;
 application/x-bittorrent=deluge.desktop;
-
+inode/directory=vlc.desktop;
