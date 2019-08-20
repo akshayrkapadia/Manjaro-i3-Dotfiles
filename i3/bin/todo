@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-
 option=`cat ~/Documents/todo.txt | rofi -dmenu -theme "Adapta-Nokto" -i -p "TODO" -font "Hack 18"`
 if [ "$option" != "" ]
 then
@@ -14,3 +13,4 @@ then
         todo
 	fi
 fi
+
