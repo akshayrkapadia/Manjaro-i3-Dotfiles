@@ -1,9 +1,9 @@
 #!/bin/zsh
-query=$(cat ~/.config/BraveSoftware/Brave-Browser/Default/Bookmarks | grep "https://*" | sed -e 's/"url": "\(.*\)"/\1/' | awk '{$1=$1};1'| rofi -dmenu -theme "Adapta-Nokto" -i -p "Search" -font "Hack 18")
+query=$(cat ~/.config/BraveSoftware/Brave-Browser/Default/Bookmarks | grep "http[s]*://*" | sed -e 's/"url": "\(.*\)"/\1/' | awk '{$1=$1};1'| rofi -dmenu -theme "Adapta-Nokto" -i -p "Search" -font "Hack 18")
 
 if [ "$query" != "" ]
 then
-	if [ "$(echo $query | grep 'https://*.*')" != "" ]
+	if [ "$(echo $query | grep 'http[s]*://*.*')" != "" ]
 	then
 		xdg-open "$query"
 	else
