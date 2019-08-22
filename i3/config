@@ -63,7 +63,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start Applications
-bindsym $mod+Shift+F2 exec brave
+bindsym $mod+Shift+F2 exec google-chrome-stable
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+Shift+F3 exec pcmanfm
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
@@ -291,7 +291,7 @@ exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+# exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
