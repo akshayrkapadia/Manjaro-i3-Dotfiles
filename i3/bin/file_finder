@@ -1,4 +1,4 @@
-#!/bin/zsh
+z#!/bin/zsh
 
 file=`find ~/ -type f | rofi -dmenu -theme "Adapta-Nokto" -i -p "File" -font "Hack 18"`
 if [ "$file" != "" ]
