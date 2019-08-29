@@ -65,11 +65,15 @@ bindsym XF86AudioPrev exec playerctl previous
 # Start Applications
 bindsym $mod+Shift+F2 exec google-chrome-stable
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
-bindsym $mod+Shift+F3 exec pcmanfm
+bindsym $mod+Ctrl+F3 exec pcmanfm
+bindsym $mod+Shift+F3 exec terminal -e ranger
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F5 exec ./dotfiles/i3/bin/todo
-bindsym $mod+Shift+F5 exec dde-calendar
+bindsym $mod+Shift+F5 exec terminal -e calcurse
+bindsym $mod+Ctrl+F5 exec dde-calendar
+bindsym $mod+F6 exec terminal -e vim
 bindsym $mod+Shift+F6 exec io.elementary.code
+bindsym $mod+F7 exec terminal -e cmus
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
