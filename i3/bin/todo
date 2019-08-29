@@ -1,18 +1,15 @@
 #!/bin/zsh
 
-option=`sort -k 1 ~/Documents/todo.txt | rofi -dmenu -theme "Adapta-Nokto" -i -p "TODO" -font "Hack 18"`
+option=`sort -k 1 ~/Documents/.todo.txt | rofi -dmenu -theme "Adapta-Nokto" -i -p "TODO" -font "Hack 18"`
 if [ "$option" != "" ]
 then
-	selection=`cat ~/Documents/todo.txt | grep "$option"`
+	selection=`cat ~/Documents/.todo.txt | grep "$option"`
 	if [ "$selection" !=  "" ]
 	then
-		sed -i /"$selection"/d ~/Documents/todo.txt
+		sed -i /"$selection"/d ~/Documents/.todo.txt
         todo
-	elif [ "$option" = "EDIT" ]
-	then
-		vim ~/Documents/todo.txt
 	else
-		echo "$option" >> ~/Documents/todo.txt
+		echo "$option" >> ~/Documents/.todo.txt
         todo
 	fi
 fi
