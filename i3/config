@@ -296,7 +296,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-# exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -335,8 +335,12 @@ set_from_resource $term_color15    color15
 bar {
 	#i3bar_command i3bar
 	#status_command i3status
+	font pango: Inconsolata for Powerline, FontAwesome 12
 	position top
-	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status -m cmus cpu sensors disk xrandr caffeine nic brightness pasink weather date time -p time.format="%I:%m %p" date.format="%a %b %e" weather.showcity="false" weather.units="imperial" nic.format="{ssid} ({ip})" nic.states="^down" disk.format="{used}/{size}" cmus.format="{title} - {artist}" -t "solarized-powerline"
+	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status\
+	-m cmus cpu disk nic brightness caffeine pasink date time\
+	-p time.format="%I:%m %p" date.format="%a %b %e" date.left-click="terminal -e 'calcurse'" pasink.right-click="terminal -e 'alsamixer'" nic.format="{ssid} ({ip})" nic.states="^down" disk.format="{used}/{size}" disk.left-click="terminal -e 'ranger'" cmus.format="{title} - {artist}"\
+	-t "onedark-powerline"
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
