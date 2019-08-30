@@ -39,7 +39,7 @@ bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
+# exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id terminal -e 'pulseaudio'
 #exec --no-startup-id pa-applet
@@ -288,11 +288,11 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 # exec --no-startup-id manjaro-hello
-exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
-exec --no-startup-id blueman-applet
+# exec --no-startup-id nm-applet
+# exec --no-startup-id xfce4-power-manager
+# exec --no-startup-id pamac-tray
+# exec --no-startup-id clipit
+# exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
@@ -333,9 +333,10 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-	status_command i3status
+	#i3bar_command i3bar
+	#status_command i3status
 	position top
+	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status -m cmus cpu sensors disk xrandr caffeine nic brightness pasink weather date time -p time.format="%I:%m %p" date.format="%a %b %e" weather.showcity="false" weather.units="imperial" nic.format="{ssid} ({ip})" nic.states="^down" disk.format="{used}/{size}" cmus.format="{title} - {artist}" -t "solarized-powerline"
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
