@@ -26,8 +26,8 @@ font xft:URWGothic-Book 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec terminal
+# start a i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -40,8 +40,8 @@ bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-
 ################################################################################################
 
 # exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id terminal -e 'pulseaudio'
+bindsym $mod+Ctrl+m exec i3-sensible-terminal -e 'alsamixer'
+#exec --no-startup-id i3-sensible-terminal -e 'pulseaudio'
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -66,14 +66,14 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+Shift+F2 exec google-chrome-stable
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+Ctrl+F3 exec pcmanfm
-bindsym $mod+Shift+F3 exec terminal -e ranger
+bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F5 exec ./dotfiles/i3/bin/todo
-bindsym $mod+Shift+F5 exec terminal -e calcurse
+bindsym $mod+Shift+F5 exec i3-sensible-terminal -e calcurse
 bindsym $mod+Ctrl+F5 exec dde-calendar
-bindsym $mod+F6 exec terminal -e vim
+bindsym $mod+F6 exec i3-sensible-terminal -e vim
 bindsym $mod+Shift+F6 exec io.elementary.code
-bindsym $mod+F7 exec terminal -e cmus
+bindsym $mod+F7 exec i3-sensible-terminal -e cmus
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -300,14 +300,14 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-# Color palette used for the terminal ( ~/.Xresources file )
+# Color palette used for the i3-sensible-terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
 # Change the variable name at the place you want to match the color
-# of your terminal like this:
+# of your i3-sensible-terminal like this:
 # [example]
 # If you want your bar to have the same background color as your
-# terminal background change the line 362 from:
+# i3-sensible-terminal background change the line 362 from:
 # background #14191D
 # to:
 # background $term_background
@@ -339,7 +339,7 @@ bar {
 	position top
 	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status\
 	-m cmus cpu disk todo bluetooth nic dunst caffeine battery brightness pasink date time\
-	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="terminal -e 'calcurse'" pasink.right-click="terminal -e 'alsamixer'" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="terminal -e 'ranger'" cpu.left-click="terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
+	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="i3-sensible-terminal -e 'calcurse'" pasink.right-click="i3-sensible-terminal -e 'alsamixer'" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="i3-sensible-terminal -e 'ranger'" cpu.left-click="i3-sensible-terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
 	-t "onedark-powerline"
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
