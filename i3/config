@@ -69,8 +69,7 @@ bindsym $mod+Ctrl+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F5 exec ./dotfiles/i3/bin/todo
-bindsym $mod+Shift+F5 exec i3-sensible-terminal -e calcurse
-bindsym $mod+Ctrl+F5 exec dde-calendar
+bindsym $mod+Shift+F5 exec dde-calendar
 bindsym $mod+F6 exec i3-sensible-terminal -e vim
 bindsym $mod+Shift+F6 exec io.elementary.code
 bindsym $mod+F7 exec i3-sensible-terminal -e cmus
@@ -339,7 +338,7 @@ bar {
 	position top
 	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status\
 	-m cmus cpu disk todo dunst nic battery brightness pasink date time\
-	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="i3-sensible-terminal -e 'calcurse'" pasink.right-click="pavucontrol" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="i3-sensible-terminal -e 'ranger'" cpu.left-click="i3-sensible-terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
+	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="dde-calendar" pasink.right-click="pavucontrol" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="i3-sensible-terminal -e 'ranger'" cpu.left-click="i3-sensible-terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
 	-t "onedark-powerline"
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
