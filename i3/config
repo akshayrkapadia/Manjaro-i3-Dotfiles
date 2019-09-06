@@ -338,7 +338,7 @@ bar {
 	font pango: Inconsolata for Powerline, FontAwesome 12
 	position top
 	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status\
-	-m cmus cpu disk todo dunst nic battery brightness pasink date time\
+	-m cmus cpu disk todo nic battery brightness pasink date time\
 	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="dde-calendar" pasink.right-click="pavucontrol" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="i3-sensible-terminal -e 'ranger'" cpu.left-click="i3-sensible-terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
 	-t "onedark-powerline"
 
