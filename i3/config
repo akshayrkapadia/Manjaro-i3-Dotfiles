@@ -40,7 +40,7 @@ bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-
 ################################################################################################
 
 # exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec i3-sensible-terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec pavucontrol 
 #exec --no-startup-id i3-sensible-terminal -e 'pulseaudio'
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -339,7 +339,7 @@ bar {
 	position top
 	status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status\
 	-m cmus cpu disk todo dunst nic battery brightness pasink date time\
-	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="i3-sensible-terminal -e 'calcurse'" pasink.right-click="i3-sensible-terminal -e 'alsamixer'" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="i3-sensible-terminal -e 'ranger'" cpu.left-click="i3-sensible-terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
+	-p time.format="%I:%M %p" date.format="%a %b %e" date.left-click="i3-sensible-terminal -e 'calcurse'" pasink.right-click="pavucontrol" nic.format="{ssid} ({ip})" nic.states="^down" todo.file="~/Documents/.todo.txt" todo.left-click="todo" disk.format="{used}/{size}" disk.left-click="i3-sensible-terminal -e 'ranger'" cpu.left-click="i3-sensible-terminal -e 'htop'" cmus.format="{title} - {artist} ({position})"\
 	-t "onedark-powerline"
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
