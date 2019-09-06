@@ -73,6 +73,7 @@ bindsym $mod+Shift+F5 exec dde-calendar
 bindsym $mod+F6 exec i3-sensible-terminal -e vim
 bindsym $mod+Shift+F6 exec io.elementary.code
 bindsym $mod+F7 exec i3-sensible-terminal -e cmus
+bindsym $mod+F8 exec i3-sensible-terminal -e newsboat
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
