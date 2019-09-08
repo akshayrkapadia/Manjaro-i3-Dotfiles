@@ -92,5 +92,5 @@ memory {
 
 tztime local {
         # format = "%Y-%m-%d %H:%M:%S"
-        format = " %a %b %e  %I:%M %p  "
+        format = " %a %b %e  %I:%M %p "
 }
