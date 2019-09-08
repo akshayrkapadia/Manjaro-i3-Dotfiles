@@ -39,7 +39,7 @@ bindsym $mod+d exec --no-startup-id `rofi -show drun -show-icons -theme "Adapta-
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-# exec --no-startup-id volumeicon
+exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec pavucontrol 
 #exec --no-startup-id i3-sensible-terminal -e 'pulseaudio'
 #exec --no-startup-id pa-applet
