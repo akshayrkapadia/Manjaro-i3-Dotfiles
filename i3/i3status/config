@@ -25,6 +25,7 @@ order += "ethernet _first_"
 # order += "battery all"
 # order += "memory"
 order += "tztime local"
+order += "time"
 
 cpu_usage {
         format = "⏲ %usage "
@@ -90,7 +91,11 @@ memory {
         format_degraded = "MEMORY < %available"
 }
 
+time {
+	format = "%I:%M %p"
+}
+
 tztime local {
         # format = "%Y-%m-%d %H:%M:%S"
-        format = " %a %b %e  %I:%M %p "
+        format = " %a, %b %d"
 }
