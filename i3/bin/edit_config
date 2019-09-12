@@ -1,0 +1,26 @@
+#!/bin/zsh
+
+file="$(echo 'i3\ni3status\nzsh\nnewsboat' | rofi -dmenu -theme 'Adapta-Nokto' -font 'Hack 18' -p Config -i)"
+if [ "$file" != "" ]
+then
+	path=""
+	case $file in
+		"i3")
+			path="$HOME/.i3/config"
+			;;
+		"i3status")
+			path="$HOME/.config/i3status/config"
+			;;
+		"zsh")
+			path="$HOME/.zshrc"
+			;;
+		"newsboat")
+			path="$HOME/.newsboat/config"
+			;;
+	esac
+	if [ "$path" != "" ]
+	then
+		exec $TERMINAL -e "vim $path"
+
+	fi
+fi

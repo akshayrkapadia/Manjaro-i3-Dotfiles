@@ -9,7 +9,7 @@
 general {
         colors = true
         interval = 5
-        color_good = "#2AA198"
+        color_good ="#5CB5E6"
         color_bad = "#586E75"
         color_degraded = "#DC322F"
 }
@@ -21,11 +21,10 @@ order += "disk /"
 # order += "disk /home"
 order += "wireless _first_"
 order += "ethernet _first_"
-# order += "volume master"
-# order += "battery all"
+order += "volume master"
+order += "battery all"
 # order += "memory"
 order += "tztime local"
-order += "time"
 
 cpu_usage {
         format = "⏲ %usage "
@@ -91,11 +90,7 @@ memory {
         format_degraded = "MEMORY < %available"
 }
 
-time {
-	format = "%I:%M %p"
-}
-
 tztime local {
         # format = "%Y-%m-%d %H:%M:%S"
-        format = " %a, %b %d"
+        format = "%a, %b %d %I:%M %p "
 }
