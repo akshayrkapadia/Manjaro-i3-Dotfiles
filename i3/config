@@ -69,10 +69,10 @@ bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
 bindsym $mod+F5 exec ./dotfiles/i3/bin/todo
 bindsym $mod+Shift+F5 exec dde-calendar
-bindsym $mod+F6 exec i3-sensible-terminal -e vim
-bindsym $mod+Shift+F6 exec ./dotfiles/i3/bin/edit_config 
+bindsym $mod+Shift+F6 exec i3-sensible-terminal -e vim
+bindsym $mod+F6 exec ./dotfiles/i3/bin/edit_config 
 bindsym $mod+F7 exec i3-sensible-terminal -e cmus
-bindsym $mod+Shift+F7 exec i3-sensible-terminal -e rtv
+bindsym $mod+Shift+F8 exec i3-sensible-terminal -e rtv
 bindsym $mod+F8 exec i3-sensible-terminal -e newsboat
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -296,7 +296,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 5 -locker blurlock -corners ----
+# exec --no-startup-id xautolock -time 5 -locker blurlock -corners ----
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
