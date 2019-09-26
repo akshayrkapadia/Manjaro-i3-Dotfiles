@@ -63,7 +63,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start Applications
-bindsym $mod+Shift+F2 exec google-chrome-stable
+bindsym $mod+Shift+F2 exec brave 
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
