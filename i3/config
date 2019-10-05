@@ -67,10 +67,11 @@ bindsym $mod+Shift+F2 exec brave
 bindsym $mod+F2 exec ./dotfiles/i3/bin/web_search
 bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+F3 exec ./dotfiles/i3/bin/file_finder
+bindsym $mod+Ctrl+F3 exec pcmanfm
 bindsym $mod+F5 exec ./dotfiles/i3/bin/todo
 bindsym $mod+Shift+F5 exec dde-calendar
 bindsym $mod+Shift+F6 exec i3-sensible-terminal -e vim
-bindsym $mod+F6 exec ./dotfiles/i3/bin/edit_config 
+# bindsym $mod+F6 exec ./dotfiles/i3/bin/edit_config 
 bindsym $mod+F7 exec i3-sensible-terminal -e cmus
 bindsym $mod+Shift+F8 exec i3-sensible-terminal -e rtv
 bindsym $mod+F8 exec i3-sensible-terminal -e newsboat
